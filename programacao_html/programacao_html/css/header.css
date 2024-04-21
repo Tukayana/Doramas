@@ -1,0 +1,52 @@
+  /* Estilo do cabeçalho */
+  #tamanho {
+    width: 20px; 
+    height: 20px; 
+    margin-left: 15px; 
+}
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: thistle; 
+    color: white;
+    padding: 10px; 
+    z-index: 1000; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Estilo da imagem e do texto à esquerda do cabeçalho */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo da imagem */
+.header-left img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+.header-right img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 16px; 
+}
+
+/* Estilo dos links à direita do cabeçalho */
+.header-right a {
+    color: deeppink; 
+    text-decoration: none; 
+    margin-left: 13px; 
+}
+
+/* Estilo do conteúdo */
+.content {
+    padding: 20px; 
+    margin-top: 60px; 
+    overflow: auto; 
+}

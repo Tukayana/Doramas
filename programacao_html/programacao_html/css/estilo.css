@@ -1,0 +1,40 @@
+
+<div class="slideshow-container">
+<div class="slide fade">
+
+    <img src="fotos/Descarrilamento-.png" alt="Slide 1" id="fotos">
+</div>
+
+<div class="slide fade">
+    <img src="fotos/kdramas-de-romance-escolar-1.webp" alt="Slide 2" id="fotos">
+</div>
+
+<div class="slide fade">
+    <img src="fotos/teen.jpg" alt="Slide 3" id="fotos">
+</div>
+
+<div class="slide fade">
+    <img src="fotos/pequenamulher.jpg" alt="Slide 3" id="fotos">
+</div>
+
+<div class="slide fade">
+     <img src="fotos/meudemonio.jpg" alt="Slide 3" id="fotos">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+
+
+ 
+
+p{ 
+    position: relative;
+}
+
+
+#fotos{
+    width: 100%;
+    height: 500px;
+}
