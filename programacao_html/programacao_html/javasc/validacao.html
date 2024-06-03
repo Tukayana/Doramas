@@ -1,0 +1,21 @@
+<head>
+    <title>js</title>
+    <script src="ex.js"></script>
+</head>
+<body>
+    <p>nome:</p>
+    <input type="text" value="" id="nome"/>
+    <p class="msg"></p>
+    <p>email:</p>
+    <input type="text" value="" id="email"/>
+    <p class="msg"></p>
+    <button onclick="validacao()"> login</button>
+    <script>
+        var nome = document.getElementById("nome") .value;   
+        var email = document.getElementById("email") .value; 
+        function validacao() {s
+            if(nome==""|| email=="")
+            document.getElementByIClass("msg").innerHTML="campo obrigatorio"
+        }
+        </script>
+</body>

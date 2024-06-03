@@ -1,40 +1,475 @@
+.first img{
+    width: 100%;
+    height: 300px;
+}
+.second{
+    padding: 15px 15px;
+    display: block;
+    justify-content: space-between;
+}
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
 
-<div class="slideshow-container">
-<div class="slide fade">
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-    <img src="fotos/Descarrilamento-.png" alt="Slide 1" id="fotos">
-</div>
+.login-form {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    padding-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-<div class="slide fade">
-    <img src="fotos/kdramas-de-romance-escolar-1.webp" alt="Slide 2" id="fotos">
-</div>
+.input-group {
+    margin-bottom: 15px;
+}
 
-<div class="slide fade">
-    <img src="fotos/teen.jpg" alt="Slide 3" id="fotos">
-</div>
+label {
+    display: block;
+    margin-bottom: 5px;
+}
 
-<div class="slide fade">
-    <img src="fotos/pequenamulher.jpg" alt="Slide 3" id="fotos">
-</div>
+input[type="text"],
+input[type="password"],input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-<div class="slide fade">
-     <img src="fotos/meudemonio.jpg" alt="Slide 3" id="fotos">
-</div>
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.roda{
+    margin-top: 15%;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+.image-container div img {
+   
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeito de transição */
+}
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-</div>
+.image-container a {
+    display: block;
+    padding-top:0; /* Espaço entre as imagens e os links */
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
 
+.image-container div img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada ao passar o mouse */
+}
+.image-container {
 
+    display: block;
+    width: 100%; height:280px;
+    margin-top: 20px;
+   background-color:aliceblue ;
 
- 
+}
 
-p{ 
+.image-container div {
+    display: inline-block;
+    width: 15%; /* Ajuste conforme necessário */
+    height: 100px;
+    margin-right: 9%; /* Espaço entre as divs */
+    text-align: center; /* Centraliza as imagens horizontalmente */
+
+}
+.inicio{
+    padding-left: 30px;
+}
+
+h3 { color:#333;
+   
+}
+button:hover {
+    background-color: #555;
+}
+
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/**************************************************estilo pesquisa **************************************/
+
+.container-EXPLORAR {
+    padding: 20px;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 0.9%;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 10px;
+    width: 60%; /* Ajusta a largura do input */
+}
+
+.search-container input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popular-dramas, .link-pairs, .button-pairs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.link-pairs, .button-pairs {
+    margin-top: 20px;
+}
+
+.link-pairs h3, .button-pairs h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.link-pair, .button-pair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.link-pair a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+.link-pair a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.link-pair a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(235, 245, 248, 0.5);
+    border-radius: 8px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.link-pair a:hover::before {
+    opacity: 1;
+}
+
+.link-pair a span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 18px;
+}
+
+.button-pair button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.button-pair button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button-pair button:hover {
+    background-color: thistle;
+}
+
+.button-pair {
+    display: flex;
+    justify-content: space-around;
+}
+
+/***************************************comunidade********************************************/
+.welcome-message{
+    width: 100%;
+    text-align: center;
+    margin-top:  13.9%;
+}
+.container-comunidade{
+    width: 85%;
+padding: 43px;
+}
+.comments {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.comment {
+    margin-top: 40px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    width: 45%;
+    height: 45;
+    text-align: center;
     position: relative;
 }
 
+.comment p {
+    margin: 10px 0;
+}
 
-#fotos{
+.comment strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.comment-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.comment-form input, .comment-form textarea {
+    width: calc(50% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.comment-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #4CAF50;
+}
+/***************************************************reursos adicionais*************************************/
+.container-recursos{
+    margin-top: 90px;
+    width: 80%;
+   
+    
+}
+.section {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.section img {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.section div {
+    width: 55%;
+}
+
+.section-china img {
+    order: 2;
+}
+
+.section-coreia img {
+    order: 2; /* Altera a ordem da imagem */
+    margin-left: 20px; 
+}
+
+.section-coreia div {
+    order: 2; 
+    margin-right: 20px; 
+}
+
+.section-japao img {
+    order: 2;
+}
+
+.section-china div, .section-japao div {
+    margin-right: 20px;
+}
+
+
+
+/********************************************************************perfil**********************************************/
+
+.container-perfi {
+    width: 85%;
+    margin: auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container-perfi h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h2 {
+    margin: 0;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.biography, .interests {
+    margin-bottom: 20px;
+}
+
+.biography h2, .interests h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.biography p {
+    color: #666;
+    text-align: justify;
+}
+
+.interests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.interests ul li {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #333;
+}
+/******************************************************videos****************************************************/
+
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.video-wrapper {
+    width: 640px;
+    max-width: 100%;
+}
+
+.video-wrapper video {
     width: 100%;
-    height: 500px;
+    height: auto;
+}
+
+.small-video-wrapper {
+    width: 320px;
+    max-width: 100%;
+}
+
+.small-video-wrapper video {
+    width: 100%;
+    height: auto;
 }

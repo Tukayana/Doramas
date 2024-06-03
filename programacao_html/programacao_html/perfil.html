@@ -6,13 +6,13 @@
     <title>Perfil</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <header>
         
         <div class="header-left">
-            <span style="color: deeppink;">Tu Drama</span>
+            <span style="color: #333;">Tu Drama</span>
             <img src="fotos/dramas.png" alt="Logo"> 
         </div>
 
@@ -22,29 +22,73 @@
             <a href="Explorar.html">Explorar</a>
             <a href="Comunidade.html">Comunidade</a>
             <a href="Recursos_educacionais.html"> Recursos educacionais </a>
+            <a href="sobre.html"> Sobre</a>
             <a href="perfil.html"> <img id="tamanho" src="fotos/R.png" alt="R"></a>
+            
+
         </div>
     </header>
 
+    <div class="container-perfi">
+        <h1>Meu Perfil</h1>
 
-  
-    <footer>
-    <div>
-     <div class="esquerda">
-        <h2>Link</h2>
-     </div>
-     <div class="meio">
-        <h2>Seguir</h2>
-        <p>Tu drama</p>
-     </div>
-     <div class="direita">
-        
-        <a href="">Politica de uso</a>
-        <a href="">Politica de privacidade</a>
-        <a href=""> Politica de direitos autorais</a>
+        <!-- Informações do usuário -->
+        <div class="profile-info">
+            <img src="fotos/per.jpeg" alt="Minha Foto de Perfil">
+            <h2>Nome: João da Silva</h2>
+            <br>
+           
+        </div>
+        <p>Email: joao.silva@example.com</p>
+        <p>Idade: 30 anos</p>
+        <p>Cidade: São Paulo</p>
+        <p>País: Brasil</p>
+        <!-- Biografia do usuário -->
+        <div class="biography">
+            <h2>Biografia</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisi ipsum. Quisque ut ipsum malesuada, gravida odio id, tincidunt nulla. Fusce congue massa sit amet odio lacinia ultricies. Phasellus posuere, eros ac auctor sodales, justo arcu varius tortor, nec varius purus odio sit amet arcu.</p>
+        </div>
+
+        <!-- Interesses do usuário -->
+        <div class="interests">
+            <h2>Interesses</h2>
+            <ul>
+                <li>Filmes</li>
+                <li>Música</li>
+                <li>Viagens</li>
+                <li>Livros</li>
+            </ul>
         </div>
     </div>
-
-    </footer>
+   
+  
+    <footer>
+        <div>
+         <div class="esquerda">
+            <h2>Contacto</h2>
+            <p>987654321</p>
+         </div>
+         <div class="meio">
+            <h2>Seguir</h2>
+            <p>Tu drama</p>
+            <P>Site oficial de doramas <br> Melhor site para o consumo <br> de artigos asiaticos</P>
+            <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao Topo">Topo</button>
+         </div>
+        </div>
+        <div class="redes-sociais">
+            <img src="fotos/inst.png" alt="Imagem 1">
+            <img src="fotos/face.svg" alt="Imagem 2">
+            <img src="fotos/A_cone-twitter.webp" alt="Imagem 3">
+        </div>
+        </footer>
+        <script>
+            // Função para rolar suavemente para o topo da página
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
 </body>
 </html>

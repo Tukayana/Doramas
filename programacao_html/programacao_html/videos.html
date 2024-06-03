@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Vídeos</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <span style="color: #333;">Tu Drama</span>
+            <img src="fotos/dramas.png" alt="Logo"> 
+        </div>
+        <div class="header-right">
+            <a href="inicio.html">Inicio</a>
+            <a href="Explorar.html">Explorar</a>
+            <a href="Comunidade.html">Comunidade</a>
+            <a href="Recursos_educacionais.html"> Recursos educacionais </a>
+            <a href="sobre.html"> Sobre</a>
+            <a href="perfil.html"> <img id="tamanho" src="fotos/R.png" alt="R"></a>
+        </div>
+    </header>
+
+    <h1>Video Playlist</h1>
+    <div class="video-container">
+        <div class="video-wrapper" id="video1">
+            <video controls onended="playNextVideo(2)">
+                <source src="videos/" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="small-video-wrapper" id="video2">
+            <video controls onended="playNextVideo(3)">
+                <source src="videos/" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+      
+        <div class="small-video-wrapper" id="video10">
+            <video controls onended="playNextVideo(1)">
+                <source src="videos/" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="small-video-wrapper" id="video10">
+            <video controls onended="playNextVideo(1)">
+                <source src="videos/" type="video/mp4">
+                
+            </video>
+        </div>
+    </div>
+
+    <script>
+        function playNextVideo(nextVideoId) {
+            const nextVideoElement = document.getElementById(`video${nextVideoId}`).getElementsByTagName('video')[0];
+            nextVideoElement.play();
+        }
+    </script>
+    
+
+    <br><br><br><br>
+
+    <footer>
+        <div>
+            <div class="esquerda">
+                <h2>Contacto</h2>
+                <p>987654321</p>
+            </div>
+            <div class="meio">
+                <h2>Seguir</h2>
+                <p>Tu drama</p>
+                <p>Site oficial de doramas <br> Melhor site para o consumo <br> de artigos asiáticos</p>
+                <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao Topo">Topo</button>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function playNextVideo(nextVideoId) {
+            const nextVideoElement = document.getElementById(`video${nextVideoId}`).getElementsByTagName('video')[0];
+            nextVideoElement.play();
+        }
+    </script>
+    <script src="js/videos.js"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

@@ -6,6 +6,7 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <style>
         .slideshow-container {
             max-width: 100%;
@@ -44,6 +45,9 @@
         .prev:hover, .next:hover {
             background-color: rgba(0, 0, 0, 0.8);
         }
+
+
+    
     </style>
 </head>
 <body>
@@ -51,7 +55,7 @@
     <header>
         
         <div class="header-left">
-            <span style="color: deeppink;">Tu Drama</span>
+            <span style="color: #333;">Tu Drama</span>
             <img src="fotos/dramas.png" alt="Logo"> 
         </div>
             
@@ -61,6 +65,8 @@
             <a href="Explorar.html">Explorar</a>
             <a href="Comunidade.html">Comunidade</a>
             <a href="Recursos_educacionais.html"> Recursos educacionais </a>
+            <a href="sobre.html"> Sobre</a>
+            <a href="login.html"> Login</a>
             <a href="perfil.html"> <img id="tamanho" src="fotos/R.png" alt="R"></a>
         </div>
     </header>
@@ -90,27 +96,98 @@
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-        
-
+        <br><br><b></b><b></b><b></b>
+        <h3 class="inicio">Lançamentos recentes</h3>
+        <div class="image-container">
+          
+            <div>
+                <img src="fotos/piramide.jpeg" alt="Imagem 3" class="roda">
+                <a href="videos.html">Pyramid game</a>
+            </div>
+            <div>
+                <img src="fotos/do1.png" alt="Imagem 1" class="roda">
+                <a href="videos.html">you are desire</a>
+            </div>
+            <div>
+                <img src="fotos/Descarrilamento-.png" alt="Imagem 2" class="roda">
+                <a href="videos.html">Descarrilamento</a>
+            </div>
+           
+            <div>
+                <img src="fotos/dorama2.png" alt="Imagem 4" class="roda">
+                <a href="videos.html">Beijo brincalhão</a>
+            </div>
+        </div>
+        <h3 class="inicio"> Melhor da China</h3>
+        <div class="image-container">
+            <div>
+                <img src="fotos/do2.png" alt="Imagem 5" class="roda">
+                <a href="videos.html">Know yourself</a>
+            </div>
+            <div>
+                <img src="fotos/jardimdemeteoros.jpg" alt="Imagem 6" class="roda">
+                <a href="videos.html">jardim de meteoros</a>
+            </div>
+            <div>
+                <img src="fotos/Youaremydestiny.jpg" alt="Imagem 7" class="roda">
+                <a href="#">You are my destiny</a>
+            </div>
+            <div>
+                <img src="fotos/NOTADAVINGANÇA1.jpg" alt="Imagem 8" class="roda">
+                <a href="videos.html">NOTA Da VINGANÇA 1</a>
+            </div>
+        </div>
+        <br><br>
+        <h3 class="inicio"> Melhor da Coreia</h3>
+        <div class="image-container">
+            <div >
+                <img src="fotos/TOMORROW.jpg" alt="Imagem 9" class="roda">
+                <a href="videos.html">TOMORROW</a>
+            </div>
+            <div>
+                <img src="fotos/teen.jpg" alt="Imagem 10" class="roda">
+                <a href="#">A teen 1</a>
+            </div>
+            <div>
+                <img src="fotos/dorama7.png" alt="Imagem 11" class="roda">
+                <a href="videos.html">A teen 2</a>
+            </div>
+            <div>
+                <img src="fotos/VINGANÇAS.jpg" alt="Imagem 12" class="roda">
+                <a href="videos.html">reverenge of others</a>
+                
+            </div>
+        </div>
+        <br><br><br>
   
     <footer>
     <div>
      <div class="esquerda">
-        <h2>Link</h2>
+        <h2>Contacto</h2>
+        <p>987654321</p>
      </div>
      <div class="meio">
         <h2>Seguir</h2>
         <p>Tu drama</p>
+        <P>Site oficial de doramas <br> Melhor site para o consumo <br> de artigos asiaticos</P>
+        <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao Topo">Topo</button>
      </div>
-     <div class="direita">
-        
-        <a href="">Politica de uso</a>
-        <a href="">Politica de privacidade</a>
-        <a href=""> Politica de direitos autorais</a>
-        </div>
     </div>
-
+    <div class="redes-sociais">
+        <img src="fotos/inst.png" alt="Imagem 1">
+        <img src="fotos/face.svg" alt="Imagem 2">
+        <img src="fotos/A_cone-twitter.webp" alt="Imagem 3">
+    </div>
     </footer>
+    <script>
+       
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
     <script>
         var slideIndex = 0;
         showSlides();

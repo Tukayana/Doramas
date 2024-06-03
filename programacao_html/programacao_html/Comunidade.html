@@ -6,13 +6,14 @@
     <title>Comunidade</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 <body>
     <header>
         
         <div class="header-left">
-            <span style="color: deeppink;">Tu Drama</span>
+            <span style="color: #333;">Tu Drama</span>
             <img src="fotos/dramas.png" alt="Logo"> 
         </div>
 
@@ -22,29 +23,67 @@
             <a href="Explorar.html">Explorar</a>
             <a href="Comunidade.html">Comunidade</a>
             <a href="Recursos_educacionais.html"> Recursos educacionais </a>
+            <a href="sobre.html"> Sobre</a>
+            <a href="login.html"> Login </a>
             <a href="perfil.html"> <img id="tamanho" src="fotos/R.png" alt="R"></a>
         </div>
     </header>
 
 
-  
-    <footer>
-    <div>
-     <div class="esquerda">
-        <h2>Link</h2>
-     </div>
-     <div class="meio">
-        <h2>Seguir</h2>
-        <p>Tu drama</p>
-     </div>
-     <div class="direita">
-        
-        <a href="">Politica de uso</a>
-        <a href="">Politica de privacidade</a>
-        <a href=""> Politica de direitos autorais</a>
+    <div class="container-comunidade">
+        <div class="welcome-message">
+            <h2>Bem-vindo à Comunidade de Doramas</h2>
+            <p>Interaja com outros fãs de doramas deixando seus comentários!</p>
+        </div>
+
+       <!-- Seção de comentários -->
+       <div class="comments">
+        <div class="comment">
+            <p><strong>FãDoramas123:</strong>"Descarrilamento foi um dos doramas mais emocionantes <br>que já assisti! Recomendo a todos os fãs de suspense e drama."</p>
+        </div>
+        <div class="comment">
+            <p><strong>AmanteDeDoramas:</strong> "Nota de Vingança 1 me deixou vidrado do início ao fim! Mal posso esperar para assistir à continuação."</p>
+        </div>
+        <div class="comment">
+            <p><strong>DoraManíaco99:</strong> "Nota de Vingança 2 superou todas as minhas expectativas! Uma trama envolvente com reviravoltas surpreendentes."</p>
         </div>
     </div>
 
-    </footer>
+     <!-- Formulário para adicionar comentários -->
+     <div class="comment-form">
+        <input type="text" placeholder="Seu nome">
+        <textarea placeholder="Deixe seu comentário"></textarea> <br>
+        <button type="button">Enviar Comentário</button>
+    </div>
+    </div>    
+  
+    <footer>
+        <div>
+         <div class="esquerda">
+            <h2>Contacto</h2>
+            <p>987654321</p>
+         </div>
+         <div class="meio">
+            <h2>Seguir</h2>
+            <p>Tu drama</p>
+            <P>Site oficial de doramas <br> Melhor site para o consumo <br> de artigos asiaticos</P>
+            <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao Topo">Topo</button>
+         </div>
+        </div>
+        <div class="redes-sociais">
+            <img src="fotos/inst.png" alt="Imagem 1">
+            <img src="fotos/face.svg" alt="Imagem 2">
+            <img src="fotos/A_cone-twitter.webp" alt="Imagem 3">
+        </div>
+        </footer>
+        <script>
+           
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
 </body>
 </html>

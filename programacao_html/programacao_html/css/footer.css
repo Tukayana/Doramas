@@ -6,8 +6,9 @@
     text-align: center; 
     position: relative;
     bottom: 0;
-    margin-top: 100%;  
+    margin-top: 0%; 
     width: 100%; 
+    left: 0; 
 }
  #footers  {
 position: absolute;
@@ -43,8 +44,20 @@ text-align: center;
 }
 
 .direita a {
-    color:white; 
+    color:black; 
     text-decoration: none; 
     display: block;
     margin-bottom: 5px; 
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px; 
+}
+
+.redes-sociais img {
+    width: 40px;  
+    margin: 0 2px;
+    height: auto; 
 }

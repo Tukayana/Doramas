@@ -39,7 +39,7 @@ header {
 
 /* Estilo dos links à direita do cabeçalho */
 .header-right a {
-    color: deeppink; 
+    color: #333; 
     text-decoration: none; 
     margin-left: 13px; 
 }

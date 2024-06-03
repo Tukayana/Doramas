@@ -6,13 +6,14 @@
     <title>Recursos Educacionais</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 <body>
     <header>
         
         <div class="header-left">
-            <span style="color: deeppink;">Tu Drama</span>
+            <span style="color: #333;">Tu Drama</span>
             <img src="fotos/dramas.png" alt="Logo"> 
         </div>
 
@@ -22,29 +23,69 @@
             <a href="Explorar.html">Explorar</a>
             <a href="Comunidade.html">Comunidade</a>
             <a href="Recursos_educacionais.html"> Recursos educacionais </a>
+            <a href="sobre.html"> Sobre</a>
+            <a href="login.html"> Login </a>
             <a href="perfil.html"> <img id="tamanho" src="fotos/R.png" alt="R"></a>
+            
         </div>
     </header>
+    <br><br><br><br>
+    <div class="container-recurso">
+       
+        <div class="section section-china">
+            <div>
+                <h2> China</h2>
+                <p>A China possui uma rica herança cultural que se reflete em seus sistemas educacionais. Com uma história que remonta a milênios, a educação chinesa valoriza o aprendizado contínuo e a excelência acadêmica. O sistema educacional da China é conhecido por sua rigorosidade e alta competitividade, com um foco significativo em matemática, ciências e tecnologias. A cultura chinesa também enfatiza a importância do respeito aos professores e ao conhecimento, o que tem contribuído para o desenvolvimento de uma sociedade bem-educada e inovadora.</p>
+            </div>
+            <img src="fotos/china.jpg" alt="China">
+        </div>
 
+        <div class="section section-coreia">
+            <img src="fotos/corea.jpg" alt="Coreia">
+            <div>
+                <h2>Coreia</h2>
+                <p>A Coreia do Sul é famosa por seu sistema educacional altamente eficaz e competitivo. O país coloca grande ênfase na educação como meio de progresso social e econômico. Desde cedo, os estudantes coreanos são encorajados a se dedicar intensamente aos estudos, muitas vezes frequentando escolas de reforço após o horário escolar. A Coreia do Sul tem um dos mais altos índices de educação superior do mundo e é um líder global em tecnologia e inovação. A cultura do aprendizado e o respeito pela educação são profundamente enraizados na sociedade coreana.</p>
+            </div>
+           
+        </div>
 
-  
-    <footer>
-    <div>
-     <div class="esquerda">
-        <h2>Link</h2>
-     </div>
-     <div class="meio">
-        <h2>Seguir</h2>
-        <p>Tu drama</p>
-     </div>
-     <div class="direita">
-        
-        <a href="">Politica de uso</a>
-        <a href="">Politica de privacidade</a>
-        <a href=""> Politica de direitos autorais</a>
+        <div class="section section-japao">
+            <div>
+                <h2>Japão</h2>
+                <p>O Japão tem um sistema educacional que combina rigor acadêmico com o desenvolvimento de habilidades sociais e culturais. A educação japonesa é conhecida por seu enfoque na disciplina, ética de trabalho e cooperação. Os estudantes japoneses passam por um sistema educacional bem estruturado que inclui escolas primárias, secundárias e universidades de renome mundial. Além do currículo acadêmico, há uma forte ênfase na educação moral, educação física e atividades extracurriculares, que ajudam a formar cidadãos bem-arredondados e preparados para contribuir com a sociedade.</p>
+            </div>
+            <img src="fotos/japao.jpg" alt="Japão">
         </div>
     </div>
 
-    </footer>
+  
+    <footer>
+        <div>
+         <div class="esquerda">
+            <h2>Contacto</h2>
+            <p>987654321</p>
+         </div>
+         <div class="meio">
+            <h2>Seguir</h2>
+            <p>Tu drama</p>
+            <P>Site oficial de doramas <br> Melhor site para o consumo <br> de artigos asiaticos</P>
+            <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao Topo">Topo</button>
+         </div>
+        </div>
+        <div class="redes-sociais">
+            <img src="fotos/inst.png" alt="Imagem 1">
+            <img src="fotos/face.svg" alt="Imagem 2">
+            <img src="fotos/A_cone-twitter.webp" alt="Imagem 3">
+        </div>
+        </footer>
+        <script>
+           
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
 </body>
 </html>
